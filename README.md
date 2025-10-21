@@ -6,17 +6,19 @@
 This protocol describes a screening strategy to screen microbes for growth/metabolic traits. A 96-well plate of organisms can be assayed in quadruplicate (4 vehicle and 4 test compound well per strain) using dual 384-well plates. To avoid human errors and cross contamination. Plates are stamped using multichannel and the 384-well plates set up using robotics. All media and supplies need to be deoxygenated by placing in the anaerobic chamber of a minimum of 48 h before experimentation.
 
 ## Materials
-- [ ] Matrix Style Storage Tubes with arrayed strain collection (Thermo Fisher, Cat# 3741)
-- [ ] Matrix Style Replacement lids (Either pre-arrayed {} or bulk {ThermoFisher, Cat# 4470})
-- [ ] 1 or 2 x 96-well culture plate (Falcon, Cat# 351177)
-- [ ] Appropriate growth media (Often BHI CHAVR, BHI CHV, or BHI CHVR : see media recipes)
+- [ ] Deep well plate with arrayed strain collection (CATALOG NUMBER：VWR 75870-796)
+- [ ] 96 well pin replicator (CATALOG NUMBER: Fisher Sci NC1567338)
+- [ ] 96 well culture plate (CATALOG NUMBER: Fisher Sci 877254)
+- [ ] Appropriate growth media (Often BHI CHV or BHI CHVR: see media recipes)
 - [ ] Sterile test compound disolved at least 100x concentration in water (prefered), DMSO, DMF, or methanol
-- [ ] 2 x 384-well plates (Corning, Cat# 3680)
+- [ ] Sterile Breathable Plate Seals (CATALOG NUMBER: VWR 490006-676)
+- [ ] Sterile Aluminum Foil Plate Seals
+- [ ] 2 x 384 well plates (CATALOG NUMBER: Sigma CLS3701-100EA)
 - [ ] Anaerobic Chamber with 20% CO2, 5% H2, 75% N2
 - [ ] OT2 with 20 µL multichannel head on right mount with 1 boxes of tips
 - [ ] 8-channel 200µL pipette with appropriate tips
-- [ ] 8-channel Matrix Style Decapper (Thermo Fisher, Cat# 4105MAT)
-- [ ] Corning® CoolBox™ XT (Corning, Cat# 432021)
+- [ ] ICE BLOCK THINGY (CATALOG NUMBER: Neta Sci 432051)
+- [ ] Plate vortex (IKA CATALOG NUMBER: Neta Sci IKA-0003319000)
 - [ ] 2 Multiskan SkyHigh Plate Readers
 - [ ] 3 x 50 mL Conical Tubes (We use: VWR, Cat# 89039-658)
 - [ ] Resorvoirs (We use: VWR, Cat#	53504-035)
@@ -32,13 +34,8 @@ This protocol describes a screening strategy to screen microbes for growth/metab
 - [ ] Gather 1 96-well plate, 2 x 384-well plates, media resorvoirs, and syringe and syringe-filters if needed. 
 - [ ] Transfer to anaerobic chamber
 
-## Preparation of Inoculum
-
-### Day 1
-- [ ] Transfer 150 µL of desired media to each well of a 96-well plate (source plate) 
-- [ ] Remove strain array plate from -80˚C freezer and thaw at RT for 5 minutes
-- [ ] Centrifuge strain array plate at ~100 G for 5 minutes (Increasing the speed could damage the plate!)
-- [ ] Place strain array plate into coolbox
+### Day 2
+- [ ] Remove Deep well strain block from -80˚C freezer and place on freezer block
 - [ ] Transfer strain block into anaerobic chamber
 - [ ] Working one column at a time, carefully remove lids from strain array plate with 8-channel decapper and discard (Frozen lids may not unseal easily and spread droplets, allow to defrost longer if needed)
 - [ ] Use p200 multichannel pipettor to press 200 µL tip to exposed column of tubes
@@ -52,7 +49,11 @@ This protocol describes a screening strategy to screen microbes for growth/metab
 
 ## Setting up assay
 
-### Day 3
+### Day 5
+- [ ] Remove the inoculation plate from the incubator and place onto plate vortex
+- [ ] Vortex for 60 seconds at 1000 rpm (do not exceed this number as it may lead to spillage and/or cross contamination)
+- [ ] Transfer 96 well plate to plate reader and measure OD600
+- [ ] Save these results to transfer to server
 - [ ] Carefully examine corner wells (sterile controls) and internal sterile wells. If signs of growth: STOP! Also, if majority of strains have not grown: STOP!
 - [ ] Add vehicle and drug to corresponding conical containing 35 mL of media
 - [ ] Into the odd rows of both 384-well plates, transfer 80 µL of appropriate growth media with 1% vehicle (whatever drug is dissolved in)
@@ -68,9 +69,7 @@ This protocol describes a screening strategy to screen microbes for growth/metab
 - [ ] Set parameters to indicate if you are regenerating source plate, the default for mixing is usually sufficient
 - [ ] Calibrate all deck positions (especially important for 384 well plates, align first tip to the center of A1 of each plate **NOT** to space between wells)
 - [ ] Run script
-- [ ] After completion (about 15 minutes)
-- [ ] Transfer 96 well plate to plate reader and measure OD600 (Naming Convention: YYYYMMNDD_plate0X_drug_preOD)
-- [ ] Save these results to transfer to server 
+- [ ] After completion (about 15 minutes), transfer breathable seals onto both 384 well plates
 - [ ] Carefully wrap exterior edges of plates with tape and transfer to plate readers
 - [ ] Set up both plate readers to run at 37˚C for 48h with OD600 reads every 15 minutes (Naming Convention: YYYYMMDD_plate0X_drug_left|right)
 - [ ] Discard source plate (unless you want to save it to verify strains after the fact), and tip box (note: tips in the box are contaminated and must be marked/discard to prevent their reuse
